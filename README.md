@@ -3,11 +3,13 @@
 > Plateforme de suivi et d'analyse des émissions carbone du patrimoine immobilier d'entreprise.
 
 <div align="center">
-  <h3>Aperçu Desktop</h3>
-  <video src="assets/videos/capgemini_carbon_calculator_compressed.mp4" width="800" controls></video>
-  <br/><br/>
-  <h3>Aperçu Mobile</h3>
-  <video src="assets/videos/capgemini_carbon_calculator_phone_compressed.mp4" height="500" controls></video>
+  <h3>Aperçu vidéo (liens vers Youtube)</h3>
+  <a href="https://youtu.be/oDEM-xm0V84">
+    <img src="https://img.youtube.com/vi/oDEM-xm0V84/maxresdefault.jpg" alt="Démonstration Carbon Calculator sur desktop" width="400" />
+  </a>
+  <a href="https://www.youtube.com/watch?v=3cafbFQirvQ">
+    <img src="https://img.youtube.com/vi/3cafbFQirvQ/maxresdefault.jpg" alt="Démonstration Carbon Calculator sur mobile" width="400" />
+  </a>
 </div>
 
 ---
