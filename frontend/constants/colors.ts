@@ -1,0 +1,25 @@
+export const Colors = {
+  primary: '#0070AD',
+  primaryDark: '#005a8e',
+  primaryLight: '#3399cc',
+  primaryUltraLight: '#EBF5FB',
+  secondary: '#00A8E0',
+  accent: '#003D6B',
+  white: '#FFFFFF',
+  background: '#F5F7FA',
+  surface: '#FFFFFF',
+  textPrimary: '#1A1A2E',
+  textSecondary: '#6B7280',
+  textTertiary: '#9CA3AF',
+  border: '#E5E7EB',
+  borderStrong: '#D1D5DB',
+  success: '#16A34A',
+  warning: '#D97706',
+  danger: '#DC2626',
+  // CO2 levels
+  carbonLow: '#16A34A',
+  carbonMedium: '#D97706',
+  carbonHigh: '#DC2626',
+  // Sidebar
+  sidebarBg: '#FAFAFA',
+} as const;

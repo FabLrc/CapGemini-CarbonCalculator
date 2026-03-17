@@ -1,0 +1,88 @@
+# IDE & Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+.netrc
+
+# OS
+Thumbs.db
+desktop.ini
+.AppleDouble
+.LSOverride
+
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development.local
+.env.test.local
+# .env.example — DO NOT IGNORE, keep for documentation
+
+# Build outputs
+dist/
+build/
+*.log
+logs/
+node_modules/
+target/
+.expo/
+.expo-shared/
+
+# IDE run configurations
+.run/
+.classpath
+.project
+.settings/
+*.iml
+*.iws
+*.ipr
+.sts4-cache/
+
+# Docker
+docker-compose.override.yml
+.dockerignore.local
+
+# Database
+*.db
+*.sqlite
+*.h2.db
+postgres_data/
+pgdata/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+.parcel-cache/
+.metro-bundler-cache/
+.watchmanconfig
+
+# Certificates & Keys (NEVER commit)
+*.pem
+*.key
+*.p8
+*.p12
+*.jks
+*.keystore
+*.mobileprovision
+
+# Coverage reports
+coverage/
+.nyc_output/
+
+# Testing
+jest-snapshot/
+__snapshots__/
+.jest-cache/
+
+# Lock files (OPTIONAL: version control or not based on team preference)
+# Uncomment below if you DON'T want to version control lock files
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml

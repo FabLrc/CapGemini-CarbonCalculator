@@ -1,0 +1,42 @@
+version: '3.9'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: carboncalc-db
+    environment:
+      POSTGRES_DB: carboncalculator
+      POSTGRES_USER: carboncalc
+      POSTGRES_PASSWORD: carboncalc_dev_2024
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U carboncalc -d carboncalculator"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: carboncalc-api
+    ports:
+      - "8080:8080"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/carboncalculator
+      SPRING_DATASOURCE_USERNAME: carboncalc
+      SPRING_DATASOURCE_PASSWORD: carboncalc_dev_2024
+      JWT_SECRET: 7A9D2F4B6C8E1G3H5I7J9K1L3M5N7O9P1Q3R5S7T9U1V3W5X7Y9Z
+      JWT_EXPIRATION_MS: 900000
+      JWT_REFRESH_EXPIRATION_MS: 604800000
+      SPRING_PROFILES_ACTIVE: dev
+    restart: unless-stopped
+
+volumes:
+  postgres_data:

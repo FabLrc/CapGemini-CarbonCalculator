@@ -1,0 +1,63 @@
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+build/
+.gradle/
+gradle-app.setting
+.gradletasknamecache
+
+# IDE
+.vscode/
+.idea/
+*.iml
+*.iws
+*.ipr
+*.classpath
+*.project
+*.springBeans
+*.c9/
+*.launch
+*.settings/
+*.sublime-workspace
+
+# STS (Spring Tool Suite)
+.sts4-cache/
+
+# Spring Boot
+.m2/
+application-local.yml
+application-dev.yml
+application-test.yml
+
+# Logs
+logs/
+*.log
+log4j.properties
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Runtime
+*.pid
+*.pid.lock
+.factorypath
+
+# Database
+*.db
+*.sqlite
+*.h2.db
